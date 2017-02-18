@@ -13,6 +13,6 @@ const Wrapper = () => (
 );
 
 ReactDOM.render(
-  <App />,
+  <Wrapper />,
   document.getElementById('root')
 );
