@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "async": "^2.1.2",
+    "axios": "^0.15.3",
     "babel-loader": "^6.3.2",
     "babelify": "^7.3.0",
     "bcrypt-nodejs": "^0.0.3",
