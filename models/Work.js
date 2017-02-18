@@ -3,25 +3,15 @@ const crypto = require('crypto');
 const mongoose = require('mongoose');
 
 const workSchema = new mongoose.Schema({
-  /*email: { type: String, unique: true },
-  password: String,
-  passwordResetToken: String,
-  passwordResetExpires: Date,
-
-  profile: {
-    name: String,
-    gender: String,
-    location: String,
-    website: String,
-    picture: String
-  }*/
-  requester: String, //or id of the user? 
+  requesterName: String, //or id of the user? 
+  contactEmail: String,
   location: String,
   description: String,
   requirement: Array, //array of strings
   estimatedHours: Number,
-  contactEmail: String,
-  dates: Date // check with google calendar api later
+  ddl: Date,
+  start_date: Date, // check with google calendar api later
+  end_date: Date
 
 }, { timestamps: true });
 
