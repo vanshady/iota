@@ -9,7 +9,7 @@ const centerStyle = {
   overflow: 'hidden',
   verticalAlign: 'middle',
   display: 'inline-block',
-  paddingTop: '40%',
+  paddingTop: '20%',
 };
 
 const bgStyle = {
@@ -39,8 +39,8 @@ const App = () => (
         </div>
         <div className="col-xs-6"
           style={{ float: 'none', display: 'inline-block', verticalAlign: 'middle', paddingTop: '30%' }}>
-            <RaisedButton label="Log in" primary style={{ marginRight: '12px' }} href="/login" />
-            <RaisedButton label="Sign up" secondary href="/signup" />
+            <RaisedButton label="Log in" style={{ marginRight: '12px' }} href="/login" />
+            <RaisedButton label="Sign up" href="/signup" />
         </div>
       </div>
     </div>

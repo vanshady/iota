@@ -30753,7 +30753,7 @@ var centerStyle = {
   overflow: 'hidden',
   verticalAlign: 'middle',
   display: 'inline-block',
-  paddingTop: '40%'
+  paddingTop: '20%'
 };
 
 var bgStyle = {
@@ -30799,8 +30799,8 @@ var App = function App() {
           'div',
           { className: 'col-xs-6',
             style: { float: 'none', display: 'inline-block', verticalAlign: 'middle', paddingTop: '30%' } },
-          _react2.default.createElement(_RaisedButton2.default, { label: 'Log in', primary: true, style: { marginRight: '12px' }, href: '/login' }),
-          _react2.default.createElement(_RaisedButton2.default, { label: 'Sign up', secondary: true, href: '/signup' })
+          _react2.default.createElement(_RaisedButton2.default, { label: 'Log in', style: { marginRight: '12px' }, href: '/login' }),
+          _react2.default.createElement(_RaisedButton2.default, { label: 'Sign up', href: '/signup' })
         )
       )
     )
