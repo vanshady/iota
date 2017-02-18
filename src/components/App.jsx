@@ -1,18 +1,15 @@
 import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const centerStyle = {
-  height: 'auto',
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  zIndex: '100',
   color: '#EEEEEE',
-  transform: 'translate(-50%,-50%)',
-  textAlign: 'center',
   fontFamily: 'Cabin,sans-serif',
   textOverflow: 'clipped',
   whiteSpace: 'nowrap',
   overflow: 'hidden',
+  verticalAlign: 'middle',
+  display: 'inline-block',
+  paddingTop: '40%',
 };
 
 const bgStyle = {
@@ -30,9 +27,22 @@ const App = () => (
         style={bgImageStyle}
       />
     </div>
-    <div style={centerStyle}>
-      <p style={{ fontSize: '80px', fontWeight: '800', marginBottom: '10px' }}>iota</p>
-      <p style={{ fontSize: '60px', marginTop: '0px' }}>Iota work for odd jobs</p>
+    <div className="container-fluid">
+      <div className="row" style={{ position: 'absolute', height: '100%', width: '100%' }}>
+        <div style={centerStyle} className="col-xs-offset-1 col-xs-5 text-left">
+          <p style={{ fontSize: '80px', fontWeight: '800', marginBottom: '10px' }}>
+            iota
+          </p>
+          <p style={{ fontSize: '60px', marginTop: '0px' }}>
+            Iota work for odd jobs
+          </p>
+        </div>
+        <div className="col-xs-6"
+          style={{ float: 'none', display: 'inline-block', verticalAlign: 'middle', paddingTop: '30%' }}>
+            <RaisedButton label="Log in" primary style={{ marginRight: '12px' }} href="/login" />
+            <RaisedButton label="Sign up" secondary href="/signup" />
+        </div>
+      </div>
     </div>
   </div>
 );
