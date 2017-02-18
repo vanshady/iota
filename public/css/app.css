@@ -1,3 +1,18 @@
 body {
     margin: 0;
 }
+
+.centerdiv {
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.centerimg {
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}

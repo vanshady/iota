@@ -27768,17 +27768,15 @@ var centerStyle = {
   textAlign: 'center',
   fontFamily: 'Cabin,sans-serif',
   textOverflow: 'clipped',
-
-  /* Required for text-overflow to do anything */
   whiteSpace: 'nowrap',
   overflow: 'hidden'
 };
 
 var bgStyle = {
-  position: 'absolute',
-  top: '0',
-  left: '0',
-  zIndex: '-5000',
+  zIndex: '-5000'
+};
+
+var bgImageStyle = {
   filter: 'brightness(80%)'
 };
 
@@ -27786,9 +27784,13 @@ var App = function App() {
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement('img', { src: '/img/bg.jpg', width: '100%', height: '100%',
-      style: bgStyle
-    }),
+    _react2.default.createElement(
+      'div',
+      { className: 'centerdiv', style: bgStyle },
+      _react2.default.createElement('img', { src: '/img/bg.jpg', className: 'centerimg',
+        style: bgImageStyle
+      })
+    ),
     _react2.default.createElement(
       'div',
       { style: centerStyle },
@@ -27799,7 +27801,7 @@ var App = function App() {
       ),
       _react2.default.createElement(
         'p',
-        { style: { fontSize: '70px', marginTop: '0px' } },
+        { style: { fontSize: '60px', marginTop: '0px' } },
         'Iota work for odd jobs'
       )
     )
