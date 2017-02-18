@@ -79,7 +79,6 @@ class App extends React.Component {
                   hintStyle={{ color: '#666666' }}
                   inputStyle={{ color: '#111111' }}
                   hintText="Email" name="email"
-                  {/*errorText="Email is required"*/}
                   value={this.state.email}
                   onChange={this.handleChangeEmail}
                 />
@@ -88,7 +87,6 @@ class App extends React.Component {
                   hintStyle={{ color: '#666666' }}
                   inputStyle={{ color: '#111111' }}
                   hintText="Password" name="password"
-                  {/*errorText="Password is required"*/}
                   value={this.state.password}
                   onChange={this.handleChangePassword}
                 />
