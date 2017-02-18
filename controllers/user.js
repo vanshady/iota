@@ -75,6 +75,7 @@ exports.getSignup = (req, res) => {
  */
 exports.postSignup = (req, res, next) => {
   req.assert('email', 'Email is not valid').isEmail();
+  req.assert('email', 'Has to be a jhu email').contains('jhu.edu')
   req.assert('password', 'Password must be at least 4 characters long').len(4);
   req.assert('confirmPassword', 'Passwords do not match').equals(req.body.password);
   req.sanitize('email').normalizeEmail({ remove_dots: false });
